@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #ff9021;
+  --secondary-color: #fff;
+  --white-color: #ffffff;
+  --link-color: #555;
+  --border-color: #ddd;
+  --width-100: 100%;
+  --header-height: 50px;
+  --padding-small: 12px;
+  --padding-medium: 16px;
+  --padding-large: 20px;
+  --footer-padding: 50px;
+  --black-color: black;
+}
+.primary-color{
+  color: var(--primary-color);
+}
+.bg-black{
+  background-color: var(--black-color) !important;
+}
+.bg-blue{
+  background-color: #2a2c38 !important;
+}
+.gap-x-30{
+  gap: 0 25px;
+  justify-content: flex-end;
+}
+.active-link {
+  background-color: white !important;
+  color: black !important;
+}
+
+.inactive-link {
+  background-color: var(--white-color);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+.inactive-link:hover {
+  background-color: black !important;
+  color: var(--white-color) !important;
+  transition: all 0.3s ease;
+}
+.call-btn-nav{
+  padding: 1rem 1.8rem;
+}
+
+.call-btn-nav:hover {
+  transition: transform 0.4s ease;
+  transform: scale(1.1);
+}
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-open {
+  transition: all 0.3s ease-in-out;
+  display: block; /* Show navbar when toggled */
+}
+
+@media (min-width: 992px) {
+  /* For larger screens (above lg), revert the collapse behavior */
+  .navbar-collapse {
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      background-color: transparent;
+      z-index: auto;
+      display: flex; /* Show flex layout normally */
+      box-shadow: none;
+  }
+  .navbar-nav{
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .gap-x-30{
+    gap: 0 15px;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .nav-items-mob,
+  .nav-call{
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .gap-x-30{
+    gap: 10px;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+}
