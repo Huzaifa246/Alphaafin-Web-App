@@ -1,0 +1,99 @@
+.service-img-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-img-contain img {
+  width: 150px;
+  padding: 20px 0;
+}
+/* OurServices.css */
+.service-card-container {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+.height-100{
+  height: 100% !important;
+}
+
+.service-image {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon-style {
+  font-size: 36px;
+  color: #ff9021;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.service-image {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+
+.overlay-text h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.overlay-text p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.overlay-text h4 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+.overlay-text h6 {
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  /* Stack the columns on smaller screens */
+  .col-lg-8,
+  .col-lg-4 {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+  .overlay-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .overlay-text p {
+    font-size: 0.9rem;
+  }
+
+  .overlay-text h4 {
+    font-size: 1.3rem;
+  }
+}

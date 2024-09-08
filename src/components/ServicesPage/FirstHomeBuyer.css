@@ -1,0 +1,163 @@
+.first-home-buyer-page {
+  background-color: #f8f9fa;
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: #ff9021;
+  animation: bounce 2s infinite;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.down-arrow {
+  font-size: 3.5rem;
+  font-weight: 1000;
+  color: #ff9021;
+  animation: bounce 1.5s infinite;
+  display: block;
+  margin-bottom: -55px;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Content Section */
+.content-image {
+  border-radius: 10px;
+  border-bottom: 5px solid #ff9021;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.content-image {
+  border-radius: 10px;
+}
+
+.mortgage-estimate-card {
+  background-color: #2a2c38 !important;
+  border-radius: 10px;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.estimate-title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.btn-interest-rate {
+  background-color: #ff9021 !important;
+  color: white;
+  padding: 25px !important;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold !important;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn-interest-rate:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .scroll-icon {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 0.9rem;
+  }
+
+  .estimate-title {
+    font-size: 1.5rem;
+  }
+
+  .btn-interest-rate {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

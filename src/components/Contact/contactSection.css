@@ -1,0 +1,109 @@
+.contact-bg-image {
+  background-image: url("../../images/contact-section.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+  height: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-color {
+  color: #ff9021;
+}
+.imgIcon2{
+  height: 80px;
+  width: auto;
+}
+.contact-section h2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+.contact-bg-image a {
+  color: #ffcc66;
+  text-decoration: none;
+}
+
+.contact-bg-image a:hover {
+  color: white;
+}
+.blue-color-btn {
+  color: #2a2c38 !important;
+}
+.bg-contact {
+  background-color: #2a2c38;
+}
+.quick-contact {
+  padding: 20px;
+}
+.opening-hours {
+  padding: 3rem;
+}
+
+.quick-contact h5,
+.opening-hours h5 {
+  font-weight: bold;
+  color: #ff9900;
+}
+
+.quick-contact p,
+.opening-hours p {
+  color: #dddddd;
+  margin-bottom: 1rem;
+}
+
+.quick-contact p .icon,
+.opening-hours p .icon {
+  margin-right: 10px;
+  color: #ff9900;
+}
+
+.opening-hours button {
+  width: 100%;
+  background-color: #ff9900;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.opening-hours button:hover {
+  background-color: #ffcc66;
+}
+.hours-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.hours-line .dots {
+  flex-grow: 1;
+  border-bottom: 1px dotted #dddddd;
+  margin: 0 10px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-bg-image {
+    padding: 40px 20px;
+    height: 100%;
+  }
+  .quick-contact,
+  .opening-hours {
+    margin-bottom: 20px;
+  }
+  .quick-contact,
+  .opening-hours {
+    margin-bottom: 20px;
+  }
+}

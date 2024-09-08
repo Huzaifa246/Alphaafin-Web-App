@@ -1,0 +1,112 @@
+
+img {
+  max-height: 45rem;
+  object-fit: cover;
+}
+
+.p-galleria-item-next.p-galleria-item-nav.p-link,
+.p-galleria-item-prev.p-galleria-item-nav.p-link {
+  transform: translateY(-45%);
+  background-color: #34291b;
+  border-radius: 24px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.p-galleria-item-prev.p-galleria-item-nav.p-link {
+  z-index: 1;
+  margin-left: 1.5rem;
+}
+
+.p-galleria-item-next.p-galleria-item-nav.p-link {
+  margin-right: 1.5rem;
+}
+
+.p-galleria-item-prev.p-galleria-item-nav.p-link:hover,
+.p-galleria-item-next.p-galleria-item-nav.p-link:hover {
+  background-color: #252728;
+}
+
+.p-icon.p-galleria-item-prev-icon,
+.p-icon.p-galleria-item-next-icon {
+  color: white;
+  width: 18px;
+  height: 18px;
+  stroke: white;
+  stroke-width: 2;
+}
+
+.carousel-text-heading {
+  width: 50%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border-radius: 10px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  animation: slideFromY 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.carousel-text-paragraph {
+  width: 50%;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  animation: slideFromY 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+@keyframes slideFromY {
+  0% {
+    opacity: 0;
+    transform: translate(-100%, -50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .carousel-text-heading {
+    width: 65%;
+    font-size: 2.5rem;
+  }
+
+  .carousel-text-paragraph {
+    width: 60%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 561px) {
+  .carousel-text-heading {
+    font-size: 1.5rem;
+    width: 65%;
+  }
+
+  .carousel-text-paragraph {
+    font-size: 0.6rem;
+    width: 60%;
+  }
+}
+
+@media (max-width: 560px) {
+  .carousel-text-heading {
+    font-size: 1rem;
+    width: 65%;
+  }
+
+  .carousel-text-paragraph {
+    font-size: 0.5rem;
+    width: 60%;
+  }
+}

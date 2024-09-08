@@ -8,7 +8,7 @@ import '../App.css';
 
 const CustomNavbar = () => {
     const [isToggled, setIsToggled] = useState(false);
-    const [activeLink, setActiveLink] = useState('#home'); // Manage the active link state
+    const [activeLink, setActiveLink] = useState('/');
 
     const handleToggle = () => {
         setIsToggled(!isToggled);
@@ -19,7 +19,6 @@ const CustomNavbar = () => {
     };
 
     const getLinkClass = (link) => {
-        // Return the class based on whether the link is active or inactive
         return activeLink === link ? 'active-link' : 'inactive-link';
     };
 
@@ -44,7 +43,7 @@ const CustomNavbar = () => {
 
             <Navbar expand="lg" className="shadow-sm">
                 <Container className="d-flex justify-content-between align-items-center">
-                    <Navbar.Brand href="#">
+                    <Navbar.Brand href="/">
                         <img src={logo} alt="Logo" width="150" />
                     </Navbar.Brand>
                     
@@ -63,53 +62,53 @@ const CustomNavbar = () => {
                     >
                         <Nav style={{ margin: '0 2vw 0 auto' }} className='nav-items-mob'>
                             <Nav.Link 
-                                href="#home" 
-                                className={`text-uppercase ${getLinkClass('#home')}`} 
-                                onClick={() => handleSetActive('#home')}
+                                href="/" 
+                                className={`text-uppercase ${getLinkClass('/')}`} 
+                                onClick={() => handleSetActive('/')}
                             >
                                 Home
                             </Nav.Link>
                             <Nav.Link 
-                                href="#about" 
-                                className={`text-uppercase ${getLinkClass('#about')}`} 
-                                onClick={() => handleSetActive('#about')}
+                                href="about-us" 
+                                className={`text-uppercase ${getLinkClass('about-us')}`} 
+                                onClick={() => handleSetActive('about-us')}
                             >
                                 About Us
                             </Nav.Link>
                             <NavDropdown title="Services" id="services-dropdown" className="text-uppercase">
                                 <NavDropdown.Item 
-                                    href="#home-loan" 
-                                    className={getLinkClass('#home-loan')} 
-                                    onClick={() => handleSetActive('#home-loan')}
+                                    href="home-loan" 
+                                    className={getLinkClass('home-loan')} 
+                                    onClick={() => handleSetActive('home-loan')}
                                 >
                                     Home Loan
                                 </NavDropdown.Item>
                                 <NavDropdown.Item 
-                                    href="#first-home-buyer" 
-                                    className={getLinkClass('#first-home-buyer')} 
-                                    onClick={() => handleSetActive('#first-home-buyer')}
+                                    href="first-home-buyer" 
+                                    className={getLinkClass('first-home-buyer')} 
+                                    onClick={() => handleSetActive('first-home-buyer')}
                                 >
                                     First Home Buyer
                                 </NavDropdown.Item>
                                 <NavDropdown.Item 
-                                    href="#personal-loan" 
-                                    className={getLinkClass('#personal-loan')} 
-                                    onClick={() => handleSetActive('#personal-loan')}
+                                    href="personal-loan" 
+                                    className={getLinkClass('personal-loan')} 
+                                    onClick={() => handleSetActive('personal-loan')}
                                 >
                                     Personal Loan
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link 
-                                href="#faqs" 
-                                className={`text-uppercase ${getLinkClass('#faqs')}`} 
-                                onClick={() => handleSetActive('#faqs')}
+                                href="faqs" 
+                                className={`text-uppercase ${getLinkClass('faqs')}`} 
+                                onClick={() => handleSetActive('faqs')}
                             >
                                 FAQ's
                             </Nav.Link>
                         </Nav>
 
                         <Nav className="ml-auto nav-call">
-                            <Nav.Link href="#call">
+                            <Nav.Link href="call">
                                 <button className="btn btn-dark call-btn-nav fw-bold">Call Us Anytime</button>
                             </Nav.Link>
                         </Nav>

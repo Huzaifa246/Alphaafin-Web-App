@@ -1,0 +1,83 @@
+/* General Styling */
+.about-us-container {
+  background-color: #f8f9fa;
+}
+
+/* First Section */
+.about-us-first-section {
+  margin-bottom: 50px;
+}
+
+.about-us-first-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.about-us-first-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.about-us-first-section p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.about-image {
+  border-radius: 20px !important;
+  border-right: 10px solid #ff9021;
+  border-bottom: 10px solid #ff9021;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* Second Section */
+.about-us-second-section {
+  background-color: #1e1e1e;
+  padding: 50px 0;
+}
+
+.expertise-section {
+  padding-left: 20px;
+}
+
+.expertise-section h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff9021;
+  margin-bottom: 20px;
+}
+
+.expertise-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.expertise-section p {
+  font-size: 1rem;
+  color: #c9c9c9;
+  margin-bottom: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .about-us-first-section h2,
+  .expertise-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-us-first-section p,
+  .expertise-section p {
+    font-size: 0.9rem;
+  }
+
+  .expertise-section {
+    padding-left: 0;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+}

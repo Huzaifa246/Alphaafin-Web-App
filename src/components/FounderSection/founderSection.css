@@ -1,0 +1,56 @@
+.founder-image {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+  }
+  .social-icons{
+    display: flex;
+    align-items: center;
+  }
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    color: #2a2c38;
+    margin-right: 10px;
+    font-size: 1.3rem;
+    background-color: #ff9900;
+    padding: 6px 10px;
+    border-radius: 10px;
+  }
+  .icon {
+    color: #ff9900;
+    margin-right: 5px;
+  }
+  .social-icons a:hover {
+    color: var(--white-color);
+    transition: all 0.2s ease;
+    background-color: #2a2c38;
+  }
+  .card-founder{
+    width: 25vw;
+    border-bottom: 7px solid #ff9021;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .founder-section {
+      text-align: center;
+    }
+  
+    .founder-image {
+      width: 120px;
+      height: 160px;
+    }
+  
+    .social-icons a {
+      font-size: 1.3rem;
+    }
+    .card-founder{
+      width: 100% !important;
+    }
+    .social-icons{
+      padding: 10px 0;
+    }
+  }
+  

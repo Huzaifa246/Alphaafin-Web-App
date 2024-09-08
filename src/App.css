@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Cairo;
 }
+
 :root {
   --primary-color: #ff9021;
   --secondary-color: #fff;
@@ -17,19 +19,24 @@
   --footer-padding: 50px;
   --black-color: black;
 }
-.primary-color{
+
+.primary-color {
   color: var(--primary-color);
 }
-.bg-black{
+
+.bg-black {
   background-color: var(--black-color) !important;
 }
-.bg-blue{
+
+.bg-blue {
   background-color: #2a2c38 !important;
 }
-.gap-x-30{
+
+.gap-x-30 {
   gap: 0 25px;
   justify-content: flex-end;
 }
+
 .active-link {
   background-color: white !important;
   color: black !important;
@@ -46,7 +53,8 @@
   color: var(--white-color) !important;
   transition: all 0.3s ease;
 }
-.call-btn-nav{
+
+.call-btn-nav {
   padding: 1rem 1.8rem;
 }
 
@@ -54,6 +62,7 @@
   transition: transform 0.4s ease;
   transform: scale(1.1);
 }
+
 .navbar-collapse {
   position: absolute;
   top: 100%;
@@ -69,39 +78,45 @@
 
 .navbar-open {
   transition: all 0.3s ease-in-out;
-  display: block; /* Show navbar when toggled */
+  display: block;
+  /* Show navbar when toggled */
 }
 
 @media (min-width: 992px) {
+
   /* For larger screens (above lg), revert the collapse behavior */
   .navbar-collapse {
-      position: relative;
-      top: auto;
-      left: auto;
-      right: auto;
-      background-color: transparent;
-      z-index: auto;
-      display: flex; /* Show flex layout normally */
-      box-shadow: none;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    background-color: transparent;
+    z-index: auto;
+    display: flex;
+    /* Show flex layout normally */
+    box-shadow: none;
   }
-  .navbar-nav{
+
+  .navbar-nav {
     align-items: center;
   }
 }
 
 @media (max-width: 768px) {
-  .gap-x-30{
+  .gap-x-30 {
     gap: 0 15px;
     flex-wrap: wrap !important;
     justify-content: center !important;
   }
+
   .nav-items-mob,
-  .nav-call{
+  .nav-call {
     align-items: center;
   }
 }
+
 @media (max-width: 480px) {
-  .gap-x-30{
+  .gap-x-30 {
     gap: 10px;
     flex-wrap: wrap !important;
     justify-content: center !important;
